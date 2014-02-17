@@ -28,60 +28,6 @@ async.series([
 	      }
 	      
 
-
-//open the second csv file and compare a value to the entire length of the array and do an operaiton when theres a match
-/*
-function(callback){
-reader.addListener('data', function(data){
-    for(i=0;i<aSilo.length;i++){
-	if(data['Asset ID'] === aSilo[i]){
-	    console.log("Wrote AudioSocket Line");
-	    fs.appendFileSync('newRaw.csv', data['Video ID']+","+data['Content Type']+","+data['Policy']+","+data['Video Title']+","+data['Video Duration (sec)']+","+data['Username']+","+data['Uploader']+","+data['Channel Display Name']+","+data['Channel ID']+","+data['Claim Type']+","+data['Claim Origin']+","+data['Total Views']+","+data['Watch Page Views']+","+data['Embedded Player Views']+","+data['Channel Page Video Views']+","+data['Live Views']+","+data['Recorded Views']+","+data['Ad-Enabled Views']+","+data['Total Earnings']+","+data['Gross YouTube-sold Revenue']+","+data['Gross Partner-sold Revenue']+","+data['Gross AdSense-sold Revenue']+","+data['Estimated RPM']+","+data['Net YouTube-sold Revenue']+","+data['Net AdSense-sold Revenue']+","+data['Multiple Claims?']+","+data['Category']+","+data['Asset ID']+","+data['Channel']+","+data['Custom ID']+","+data['ISRC']+","+data['GRid']+","+data['UPC']+","+data['Artist']+","+data['Asset Title']+","+data['Album']+","+data['Label']+",AUDIOSOCKET"+"\n");
-	    break;
-	}
-    }
-    });
-callback();
-},*/
-/*
-reader.addListener('end', function(){
-    callback();
-});*/
-
-/*
-function(callback){
-reader.addListener('data', function(data){
-    for(i=0;i<tSilo.length;i++){
-	if(data['Asset ID'] === tSilo[i]){
-	    console.log("Wrote TuneCore Line");
-	    fs.appendFileSync('newRaw.csv', data['Video ID']+","+data['Content Type']+","+data['Policy']+","+data['Video Title']+","+data['Video Duration (sec)']+","+data['Username']+","+data['Uploader']+","+data['Channel Display Name']+","+data['Channel ID']+","+data['Claim Type']+","+data['Claim Origin']+","+data['Total Views']+","+data['Watch Page Views']+","+data['Embedded Player Views']+","+data['Channel Page Video Views']+","+data['Live Views']+","+data['Recorded Views']+","+data['Ad-Enabled Views']+","+data['Total Earnings']+","+data['Gross YouTube-sold Revenue']+","+data['Gross Partner-sold Revenue']+","+data['Gross AdSense-sold Revenue']+","+data['Estimated RPM']+","+data['Net YouTube-sold Revenue']+","+data['Net AdSense-sold Revenue']+","+data['Multiple Claims?']+","+data['Category']+","+data['Asset ID']+","+data['Channel']+","+data['Custom ID']+","+data['ISRC']+","+data['GRid']+","+data['UPC']+","+data['Artist']+","+data['Asset Title']+","+data['Album']+","+data['Label']+",TUNECORE"+"\n");
-	    break;
-	}
-    }
-});
-callback();
-}*/
-/*
-reader.addListener('end', function(){
-    callback();
-});
-*/
-/*
-function(callback){
-reader.addListener('data', function(data){
-    for(i=0;i<combined.length;i++){
-	if(data[0] === combined[i]){
-	    console.log("MATCH!  DONT WRITE")
-	    break;
-	}
-
-	else{
-	    fs.appendFileSync('newRaw.csv', data['Video ID']+","+data['Content Type']+","+data['Policy']+","+data['Video Title']+","+data['Video Duration (sec)']+","+data['Username']+","+data['Uploader']+","+data['Channel Display Name']+","+data['Channel ID']+","+data['Claim Type']+","+data['Claim Origin']+","+data['Total Views']+","+data['Watch Page Views']+","+data['Embedded Player Views']+","+data['Channel Page Video Views']+","+data['Live Views']+","+data['Recorded Views']+","+data['Ad-Enabled Views']+","+data['Total Earnings']+","+data['Gross YouTube-sold Revenue']+","+data['Gross Partner-sold Revenue']+","+data['Gross AdSense-sold Revenue']+","+data['Estimated RPM']+","+data['Net YouTube-sold Revenue']+","+data['Net AdSense-sold Revenue']+","+data['Multiple Claims?']+","+data['Category']+","+data['Asset ID']+","+data['Channel']+","+data['Custom ID']+","+data['ISRC']+","+data['GRid']+","+data['UPC']+","+data['Artist']+","+data['Asset Title']+","+data['Album']+","+data['Label']+"\n");
-	}
-    }
-});
-callback();
-}*/
 ]);
 
 //FUNCTIONS ****
