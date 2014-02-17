@@ -31,7 +31,10 @@ async.series([
         tunecore(callback);
     },
     function(callback){
-        audiosocket(callback)
+        audiosocket(callback);
+    },
+    function(callback){
+        ender(callback);
     }
 ]);
 
@@ -147,7 +150,7 @@ function audioSocket(callback){
     })
 }
     
-function combined(callback){
+function ender(callback){
     reader.addListener('data', function(data){
         var silo = [];
         silo.push(data['Asset ID']).split('|');
