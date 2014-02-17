@@ -29,6 +29,9 @@ async.series([
 
     function(callback){
         tunecore(callback);
+    },
+    function(callback){
+        audiosocket(callback)
     }
 ]);
 
@@ -139,6 +142,9 @@ function audioSocket(callback){
             }
         }
     })
+    reader.addListener('data', function(){
+        callback();
+    })
 }
     
 function combined(callback){
@@ -163,6 +169,9 @@ function combined(callback){
                 }
             }
         }
+    })
+    reader.addListener('end', function(){
+        callback();
     })
 }
 
