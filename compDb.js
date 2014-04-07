@@ -7,7 +7,7 @@ var async = require('async');
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 var Server = require('mongodb').Server;
-var MONGOHQ_URL="mongodb://indmusic:247MCNetwork@zach.mongohq.com:10094/INDMUSIC_main";
+var MONGOHQ_URL="MONGOHQURL";
 
 var tSilo = [];
 var aSilo = [];
